@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-padding: 4rem 0;
+padding: 10rem 0;
+height: 950px;
 
 h1{
     margin: 3rem 0;
@@ -46,7 +47,7 @@ button:hover{
 span{
     line-height: 130%;
     margin-bottom: 1rem;
-    font-size: 110%;
+    font-size: 140%;
 }
 
 .release-date{

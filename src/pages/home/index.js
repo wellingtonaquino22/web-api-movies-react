@@ -1,5 +1,4 @@
 import { Container, MovieList, Movie } from "./styles";
-// import { APIKey } from "../../config/key"
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
