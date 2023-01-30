@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {Link,useParams} from 'react-router-dom'
-import { APIKey } from '../../Config/keys'
+// import { APIKey } from '../../config/key'
 import { Container } from './styles'
 
 
@@ -10,7 +10,7 @@ const [movie,setMovies] = useState({})
 const image_path = 'https://image.tmdb.org/t/p/w500'
 
 useEffect(()=>{
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=en-US&page=1`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=e7e4e4dc58009231473c43ef9d581021&language=en-US&page=1`)
         .then(Response => Response.json())
         .then(data=>{
 
@@ -38,7 +38,7 @@ useEffect(()=>{
                 <img src={movie.image} alt = {movie.sinopse}/>                
                 <div className='details'>
                     <h1>{movie.title}</h1>
-                    <span>sinopse:{movie.sinopse}</span>
+                    <span>Sinopse:{movie.sinopse}</span>
                     <span className='release-date'>Release Date:{movie.releaseDate} </span>
                     <Link to='/'><button>Go back</button></Link>                   
                 </div>
